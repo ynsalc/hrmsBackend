@@ -94,6 +94,7 @@ public class CvMainController
 			return ResponseEntity.badRequest().body(result);
 		}
 	}
+	
 	@PutMapping("/update")
 	public ResponseEntity<?> update(@RequestParam String githubLink, @RequestParam String linkedinLink, @RequestParam String coverLetter, @RequestParam int cvMainId)
 	{

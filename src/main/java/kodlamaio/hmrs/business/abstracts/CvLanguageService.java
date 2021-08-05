@@ -10,8 +10,6 @@ import kodlamaio.hmrs.entities.dtos.CvLanguageDto;
 public interface CvLanguageService 
 {
 	DataResult<List<CvLanguage>> getAll();
-	DataResult<CvLanguage> get(int id);
-	Result add(CvLanguage cvLanguage);
 	DataResult<List<CvLanguage>> getByCvMainId(int cvMainId);
 	DataResult<CvLanguage> get(int id);
 	Result add(CvLanguageDto cvLanguageDto);

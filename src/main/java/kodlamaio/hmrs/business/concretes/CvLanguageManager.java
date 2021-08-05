@@ -44,6 +44,7 @@ public class CvLanguageManager implements CvLanguageService
 		this.cvLanguageDao.save(cvLanguage);
 		return new SuccessResult("Başarıyla Eklendi.");
 	}
+
 	@Override
 	public Result delete(int id) 
 	{
@@ -56,4 +57,5 @@ public class CvLanguageManager implements CvLanguageService
 	{
 		return new SuccessDataResult<List<CvLanguage>>(this.cvLanguageDao.getByCvMainId(cvMainId));
 	}
+
 }

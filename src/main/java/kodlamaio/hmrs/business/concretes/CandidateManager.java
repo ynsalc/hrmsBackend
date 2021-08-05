@@ -15,7 +15,6 @@ import kodlamaio.hmrs.core.utilities.result.SuccessDataResult;
 import kodlamaio.hmrs.core.utilities.result.SuccessResult;
 import kodlamaio.hmrs.core.utilities.validation.person.PersonValidationService;
 import kodlamaio.hmrs.dataAccess.abstracts.CandidateDao;
-import kodlamaio.hmrs.entities.concretes.Candidate;
 import kodlamaio.hmrs.dataAccess.abstracts.CandidateFavoriteJobAdvertDao;
 import kodlamaio.hmrs.entities.concretes.Candidate;
 import kodlamaio.hmrs.entities.concretes.CandidateFavoriteJobAdvert;
@@ -33,8 +32,7 @@ public class CandidateManager implements CandidateService
 	@Autowired
 	public CandidateManager(CandidateDao candidateDao,
 			PersonValidationService personValidationService,
-			ModelMapper modelMapper,UserService userService) 
-			ModelMapper modelMapper,UserService userService,CandidateFavoriteJobAdvertDao candidateFavoriteJobAdvertDao)
+			ModelMapper modelMapper,UserService userService,CandidateFavoriteJobAdvertDao candidateFavoriteJobAdvertDao) 
 	{
 		super();
 		this.candidateDao=candidateDao;

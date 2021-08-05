@@ -52,10 +52,12 @@ public class CvExperienceManager implements CvExperienceService
 		this.cvExperienceDao.save(cvExperience);
 		return new SuccessResult("Başarıyla Kaydedildi.");
 	}
+
 	@Override
 	public Result delete(int id) 
 	{
 		this.cvExperienceDao.deleteById(id);
 		return new SuccessResult("Başarıyla silindi.");
 	}
+
 }

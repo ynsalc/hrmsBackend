@@ -61,9 +61,6 @@ public class CvSkillController
 	}
 	
 	@PostMapping("/add")
-	public ResponseEntity<?> add(@RequestBody CvSkill cvSkill)
-	{
-		Result result = this.cvSkillService.add(cvSkill);
 	public ResponseEntity<?> add(@RequestBody CvSkillDto cvSkillDto)
 	{
 		Result result = this.cvSkillService.add(cvSkillDto);

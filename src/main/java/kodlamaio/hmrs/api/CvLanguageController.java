@@ -61,9 +61,6 @@ public class CvLanguageController
 	}
 	
 	@PostMapping("/add")
-	public ResponseEntity<?> add(@RequestBody CvLanguage cvLanguage)
-	{
-		Result result = this.cvLanguageService.add(cvLanguage);
 	public ResponseEntity<?> add(@RequestBody CvLanguageDto cvLanguageDto)
 	{
 		Result result = this.cvLanguageService.add(cvLanguageDto);

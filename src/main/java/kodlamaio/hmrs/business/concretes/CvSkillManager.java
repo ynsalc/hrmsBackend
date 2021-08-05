@@ -45,6 +45,7 @@ public class CvSkillManager implements CvSkillService
 		this.cvSkillDao.save(cvSkill);
 		return new SuccessResult("Başarıyla Eklendi.");
 	}
+
 	@Override
 	public DataResult<List<CvSkill>> getByCvMainId(int cvMainId) 
 	{
@@ -57,4 +58,5 @@ public class CvSkillManager implements CvSkillService
 		this.cvSkillDao.deleteById(id);
 		return new SuccessResult("Başarıyla Silindi");
 	}
+
 }

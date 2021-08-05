@@ -52,6 +52,7 @@ public class JobAdvertisementManager implements JobAdvertisementService
 		jobAdvertisementDao.delete(jobAdversitement);
 		return new SuccessResult("Silme işlemi başarılı");
 	}
+
 	@Override
 	public DataResult<List<JobAdvertisement>> getByIsActive(Boolean isActive) 
 	{
@@ -78,4 +79,7 @@ public class JobAdvertisementManager implements JobAdvertisementService
 		return new SuccessDataResult<List<JobAdvertisement>>
 		(this.jobAdvertisementDao.getFilteringAndPage(filterOption, pageable).getContent(), this.jobAdvertisementDao.getFilteringAndPage(filterOption, pageable).getTotalElements() + "");
 	}
+
+
+	
 }

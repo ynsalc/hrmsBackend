@@ -36,9 +36,11 @@ public class UserManager implements UserService
 		userDao.save(user);
 		return new SuccessResult("Kullanıcı eklendi.");
 	}
+
 	@Override
 	public DataResult<User> getByEmail(String email) 
 	{
 		return new SuccessDataResult<User>(this.userDao.findByEmail(email),"E-mail adresine göre kullanıcı listelendi.");
 	}
+
 }

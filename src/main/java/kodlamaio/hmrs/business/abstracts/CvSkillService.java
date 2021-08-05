@@ -10,8 +10,6 @@ import kodlamaio.hmrs.entities.dtos.CvSkillDto;
 public interface CvSkillService 
 {
 	DataResult<List<CvSkill>> getAll();
-	DataResult<CvSkill> get(int id);
-	Result add(CvSkill cvSkill);
 	DataResult<List<CvSkill>> getByCvMainId(int cvMainId);
 	DataResult<CvSkill> get(int id);
 	Result add(CvSkillDto cvSkillDto);
