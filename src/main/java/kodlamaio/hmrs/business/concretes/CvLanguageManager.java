@@ -12,10 +12,7 @@ import kodlamaio.hmrs.core.utilities.result.SuccessDataResult;
 import kodlamaio.hmrs.core.utilities.result.SuccessResult;
 import kodlamaio.hmrs.dataAccess.abstracts.CvLanguageDao;
 import kodlamaio.hmrs.entities.concretes.CvLanguage;
-<<<<<<< HEAD
-=======
 import kodlamaio.hmrs.entities.dtos.CvLanguageDto;
->>>>>>> a62b5e5 (day 14 finished)
 
 @Service
 public class CvLanguageManager implements CvLanguageService
@@ -41,20 +38,12 @@ public class CvLanguageManager implements CvLanguageService
 	}
 
 	@Override
-<<<<<<< HEAD
-	public Result add(CvLanguage cvLanguage) 
-	{
-=======
 	public Result add(CvLanguageDto cvLanguageDto) 
 	{
 		CvLanguage cvLanguage = new CvLanguage(cvLanguageDto.getResumeId(),cvLanguageDto.getLanguageName(),cvLanguageDto.getLevel());
->>>>>>> a62b5e5 (day 14 finished)
 		this.cvLanguageDao.save(cvLanguage);
 		return new SuccessResult("Başarıyla Eklendi.");
 	}
-
-<<<<<<< HEAD
-=======
 	@Override
 	public Result delete(int id) 
 	{
@@ -67,6 +56,4 @@ public class CvLanguageManager implements CvLanguageService
 	{
 		return new SuccessDataResult<List<CvLanguage>>(this.cvLanguageDao.getByCvMainId(cvMainId));
 	}
-
->>>>>>> a62b5e5 (day 14 finished)
 }

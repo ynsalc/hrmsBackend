@@ -13,8 +13,5 @@ public interface CvExperienceService
 	DataResult<List<CvExperience>> getByCvMainId(int cvMainCv);
 	DataResult<CvExperience> get(int id);
 	Result add(CvExperienceAddDto cvExperienceAddDto);
-<<<<<<< HEAD
-=======
 	Result delete(int id);
->>>>>>> a62b5e5 (day 14 finished)
 }

@@ -53,15 +53,10 @@ public class CvEducationManager implements CvEducationService
 		this.cvEducationDao.save(cvEducation);
 		return new SuccessResult("Başarıyla Eklendi.");
 	}
-
-<<<<<<< HEAD
-=======
 	@Override
 	public Result delete(int id) 
 	{
 		this.cvEducationDao.deleteById(id);
 		return new SuccessResult("Başarıyla Silindi");
 	}
-
->>>>>>> a62b5e5 (day 14 finished)
 }

@@ -18,10 +18,7 @@ import kodlamaio.hmrs.core.utilities.result.Result;
 import kodlamaio.hmrs.core.utilities.result.SuccessResult;
 import kodlamaio.hmrs.entities.concretes.JobAdvertisement;
 import kodlamaio.hmrs.entities.dtos.JobAdvertAddDto;
-<<<<<<< HEAD
-=======
 import kodlamaio.hmrs.entities.dtos.JobAdvertisementFilter;
->>>>>>> a62b5e5 (day 14 finished)
 
 @RestController
 @RequestMapping("/api/jobadvertisement")
@@ -73,8 +70,6 @@ public class JobAdvertisementController
 	{
 		return jobAdvertisementService.Delete(jobAdvertisement);
 	}
-<<<<<<< HEAD
-=======
 	
 	@GetMapping("/getbyisactive")
 	public DataResult<List<JobAdvertisement>> getByIsActive(@RequestParam Boolean isActive)
@@ -98,5 +93,4 @@ public class JobAdvertisementController
 	public DataResult<List<JobAdvertisement>> getAllByFilteredAndPaged(@RequestParam int pageNo, @RequestParam int pageSize, @RequestBody JobAdvertisementFilter filterOption) {
 		return this.jobAdvertisementService.getAllByFilteredAndPaged(pageNo, pageSize, filterOption);
 	}
->>>>>>> a62b5e5 (day 14 finished)
 }

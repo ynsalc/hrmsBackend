@@ -13,8 +13,5 @@ public interface CvEducationService
 	DataResult<List<CvEducation>> getByCvMainId(int cvMainId);
 	DataResult<CvEducation> get(int id);
 	Result add(CvEducationAddDto cvEducationAddDto);
-<<<<<<< HEAD
-=======
 	Result delete(int id);
->>>>>>> a62b5e5 (day 14 finished)
 }

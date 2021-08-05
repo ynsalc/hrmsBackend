@@ -4,29 +4,21 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
-<<<<<<< HEAD
-=======
+
 import org.springframework.web.bind.annotation.DeleteMapping;
->>>>>>> a62b5e5 (day 14 finished)
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-<<<<<<< HEAD
-=======
 import org.springframework.web.bind.annotation.RequestParam;
->>>>>>> a62b5e5 (day 14 finished)
 import org.springframework.web.bind.annotation.RestController;
 
 import kodlamaio.hmrs.business.abstracts.CandidateService;
 import kodlamaio.hmrs.core.utilities.result.DataResult;
 import kodlamaio.hmrs.core.utilities.result.Result;
 import kodlamaio.hmrs.entities.concretes.Candidate;
-<<<<<<< HEAD
-=======
 import kodlamaio.hmrs.entities.concretes.CandidateFavoriteJobAdvert;
 import kodlamaio.hmrs.entities.dtos.CandidateFavoriteJobAdvertDto;
->>>>>>> a62b5e5 (day 14 finished)
 
 @RestController
 @RequestMapping("/api/candidates")
@@ -53,8 +45,6 @@ public class CandidatesController
 	{
 		return candidateService.Add(candidate);
 	}
-<<<<<<< HEAD
-=======
 	
 	@GetMapping("/getbyfavoritecandidateid")
 	public DataResult<List<CandidateFavoriteJobAdvert>> getByCandidate_Id(@RequestParam int candidateId)
@@ -73,5 +63,4 @@ public class CandidatesController
 	{
 		return candidateService.removeFavorite(id);
 	}
->>>>>>> a62b5e5 (day 14 finished)
 }
