@@ -34,11 +34,19 @@ public class CvLanguage
 	private String languageName;
 	
 	@Column(name="level")
+<<<<<<< HEAD
 	private String level;
 
 	public CvLanguage() {}
 	
 	public CvLanguage(int resumeId, String languageName, String level) {
+=======
+	private int level;
+
+	public CvLanguage() {}
+	
+	public CvLanguage(int resumeId, String languageName, int level) {
+>>>>>>> a62b5e5 (day 14 finished)
 		super();
 		this.cvMain = new CvMain();
 		this.cvMain.setId(resumeId);
@@ -70,11 +78,19 @@ public class CvLanguage
 		this.languageName = languageName;
 	}
 
+<<<<<<< HEAD
 	public String getLevel() {
 		return level;
 	}
 
 	public void setLevel(String level) {
+=======
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+>>>>>>> a62b5e5 (day 14 finished)
 		this.level = level;
 	}
 }

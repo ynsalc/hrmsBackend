@@ -7,6 +7,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+<<<<<<< HEAD
+=======
+import org.springframework.web.bind.annotation.PutMapping;
+>>>>>>> a62b5e5 (day 14 finished)
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -93,4 +97,13 @@ public class CvMainController
 			return ResponseEntity.badRequest().body(result);
 		}
 	}
+<<<<<<< HEAD
+=======
+	
+	@PutMapping("/update")
+	public ResponseEntity<?> update(@RequestParam String githubLink, @RequestParam String linkedinLink, @RequestParam String coverLetter, @RequestParam int cvMainId)
+	{
+		return ResponseEntity.ok(this.cvMainService.update(githubLink, linkedinLink, coverLetter, cvMainId));
+	}
+>>>>>>> a62b5e5 (day 14 finished)
 }

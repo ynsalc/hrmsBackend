@@ -18,6 +18,10 @@ import kodlamaio.hmrs.core.utilities.result.Result;
 import kodlamaio.hmrs.core.utilities.result.SuccessResult;
 import kodlamaio.hmrs.entities.concretes.JobAdvertisement;
 import kodlamaio.hmrs.entities.dtos.JobAdvertAddDto;
+<<<<<<< HEAD
+=======
+import kodlamaio.hmrs.entities.dtos.JobAdvertisementFilter;
+>>>>>>> a62b5e5 (day 14 finished)
 
 @RestController
 @RequestMapping("/api/jobadvertisement")
@@ -69,4 +73,30 @@ public class JobAdvertisementController
 	{
 		return jobAdvertisementService.Delete(jobAdvertisement);
 	}
+<<<<<<< HEAD
+=======
+	
+	@GetMapping("/getbyisactive")
+	public DataResult<List<JobAdvertisement>> getByIsActive(@RequestParam Boolean isActive)
+	{
+		return jobAdvertisementService.getByIsActive(isActive);
+	}
+	
+	@GetMapping("/getbyemployerid")
+	public DataResult<List<JobAdvertisement>> getByEmployer_Id(@RequestParam int employerId)
+	{
+		return jobAdvertisementService.getByEmployer_Id(employerId);
+	}
+	
+	@GetMapping("/filter")
+	public DataResult<List<JobAdvertisement>> getByCity_IdAndWorkType_IdAndJobPosition_Id(@RequestParam int cityId, @RequestParam int workTypeId, @RequestParam int jobPositionId)
+	{
+		return jobAdvertisementService.getByCity_IdAndWorkType_IdAndJobPosition_Id(cityId, workTypeId, jobPositionId);
+	}
+	
+	@PostMapping("/getAllByFilteredAndPaged")
+	public DataResult<List<JobAdvertisement>> getAllByFilteredAndPaged(@RequestParam int pageNo, @RequestParam int pageSize, @RequestBody JobAdvertisementFilter filterOption) {
+		return this.jobAdvertisementService.getAllByFilteredAndPaged(pageNo, pageSize, filterOption);
+	}
+>>>>>>> a62b5e5 (day 14 finished)
 }

@@ -37,4 +37,13 @@ public class UserManager implements UserService
 		return new SuccessResult("Kullanıcı eklendi.");
 	}
 
+<<<<<<< HEAD
+=======
+	@Override
+	public DataResult<User> getByEmail(String email) 
+	{
+		return new SuccessDataResult<User>(this.userDao.findByEmail(email),"E-mail adresine göre kullanıcı listelendi.");
+	}
+
+>>>>>>> a62b5e5 (day 14 finished)
 }

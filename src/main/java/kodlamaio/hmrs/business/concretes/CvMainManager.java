@@ -10,6 +10,10 @@ import org.springframework.web.multipart.MultipartFile;
 import kodlamaio.hmrs.business.abstracts.CvMainService;
 import kodlamaio.hmrs.core.utilities.cloudinaryImplements.CloudinaryService;
 import kodlamaio.hmrs.core.utilities.result.DataResult;
+<<<<<<< HEAD
+=======
+import kodlamaio.hmrs.core.utilities.result.ErrorResult;
+>>>>>>> a62b5e5 (day 14 finished)
 import kodlamaio.hmrs.core.utilities.result.Result;
 import kodlamaio.hmrs.core.utilities.result.SuccessDataResult;
 import kodlamaio.hmrs.core.utilities.result.SuccessResult;
@@ -74,4 +78,18 @@ public class CvMainManager implements CvMainService
 		this.cvMainDao.save(cvMain);
 		return new SuccessResult("Resim eklendi.");
 	}
+<<<<<<< HEAD
+=======
+
+	@Override
+	public Result update(String githubLink, String linkedinLink, String coverLetter, int cvMainId) 
+	{
+		CvMain cvMain = this.get(cvMainId).getData();
+		cvMain.setGithubLink(githubLink);
+		cvMain.setLinkedinLink(linkedinLink);
+		cvMain.setCoverLetter(coverLetter);
+		this.cvMainDao.save(cvMain);
+		return new SuccessResult("Başarıyla güncellendi");
+	}
+>>>>>>> a62b5e5 (day 14 finished)
 }

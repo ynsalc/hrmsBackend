@@ -17,4 +17,8 @@ public interface CvMainService
 	Result add(CandidateCvAddDto candidateCvAddDto);
 	Result add(CvMain cvMain);
 	Result uploadPhoto(int cvId, MultipartFile file);
+<<<<<<< HEAD
+=======
+	Result update(String githubLink, String linkedinLink, String coverLetter, int cvMainId);
+>>>>>>> a62b5e5 (day 14 finished)
 }

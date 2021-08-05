@@ -34,10 +34,17 @@ public class CvSkill
 
 	public CvSkill() {}
 	
+<<<<<<< HEAD
 	public CvSkill(int id, String skillName, CvMain cvMain) {
 		super();
 		this.id = id;
 		this.cvMain = cvMain;
+=======
+	public CvSkill(int resumeId, String skillName) {
+		super();
+		this.cvMain = new CvMain();
+		this.cvMain.setId(resumeId);
+>>>>>>> a62b5e5 (day 14 finished)
 		this.skillName = skillName;
 	}
 

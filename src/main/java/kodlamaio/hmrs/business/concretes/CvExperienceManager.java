@@ -53,4 +53,14 @@ public class CvExperienceManager implements CvExperienceService
 		return new SuccessResult("Başarıyla Kaydedildi.");
 	}
 
+<<<<<<< HEAD
+=======
+	@Override
+	public Result delete(int id) 
+	{
+		this.cvExperienceDao.deleteById(id);
+		return new SuccessResult("Başarıyla silindi.");
+	}
+
+>>>>>>> a62b5e5 (day 14 finished)
 }

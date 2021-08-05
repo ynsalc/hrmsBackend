@@ -21,10 +21,17 @@ public class JobPosition
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
+<<<<<<< HEAD
 	private int Id; 
 	
 	@Column(name="title")
 	private String Name;  
+=======
+	private int id; 
+	
+	@Column(name="title")
+	private String name;  
+>>>>>>> a62b5e5 (day 14 finished)
 	
 	@OneToMany(mappedBy="jobPosition")
 	private List<JobAdvertisement> jobAdvertisement;
@@ -34,12 +41,18 @@ public class JobPosition
 	public JobPosition(int id, String name, List<JobAdvertisement> jobAdvertisement) 
 	{
 		//super();
+<<<<<<< HEAD
 		Id = id;
 		Name = name;
+=======
+		this.id = id;
+		this.name = name;
+>>>>>>> a62b5e5 (day 14 finished)
 		this.jobAdvertisement = jobAdvertisement;
 	}
 
 	public int getId() {
+<<<<<<< HEAD
 		return Id;
 	}
 
@@ -53,6 +66,21 @@ public class JobPosition
 
 	public void setName(String name) {
 		Name = name;
+=======
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+>>>>>>> a62b5e5 (day 14 finished)
 	}
 
 	public List<JobAdvertisement> getJobAdvertisement() {
